@@ -26,6 +26,6 @@
 
 3. Replace the **$clientId**, **$secret**, and **$tenantId** placeholder values with the application ID, password, and your you copied during app registration.
 
-4. Since this will require Admin Consent, in your web browser, as the admin account, go to https://login.microsoftonline.com/common/adminconsent?client_id=$($clientId)&state=demo&redirect_uri=$($redirecturi) *replace the  **redirecturi** and **clientId** with the values for the app. Once signed in, click **Accept** button to *authorize* the application.
+4. Since this will require Admin Consent, in your web browser, as the admin account, go to https://login.microsoftonline.com/common/adminconsent?client_id=$($clientId)&state=demo&redirect_uri=$($redirecturi)  *replace the  **redirecturi** and **clientId** with the values for the app.* Once signed in, click **Accept** button to *authorize* the application.
 
 5. Press F5 to run the sample.
