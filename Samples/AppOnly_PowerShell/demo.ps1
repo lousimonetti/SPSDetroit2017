@@ -4,6 +4,8 @@ $clientId = 'f56826f7-40dd-4a5b-b7df-54f4ba271e5a';
 $secret = 'egemORBN311%=omoDXV75|~';
 $redirecturi = "http://localhost:4200";
 $tenantId = '1f8ecb0c-9942-490f-8e72-ddead5d7d98e';
+
+Add-Type -AssemblyName System.Web -ErrorAction SilentlyContinue
 <#
 # 
     $admin_consent_uri = 
@@ -72,7 +74,7 @@ function Get-AccessToken(){
 
     $contentType=  "application/x-www-form-urlencoded";
 
-    $token=  Invoke-RestMethod -method GET -Uri $token_uri -body $body -contenttype $contentType 
+    $token=  Invoke-RestMethod -method POST -Uri $token_uri -body $body -contenttype $contentType 
     return $token;
 }
 
